@@ -23,6 +23,26 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+#mainHeader{
+    width: 1440px;
+    height: 79px; 
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#mainNav{
+   display: flex; 
+   justify-content: flex-end;
+}
+#logoPng{
+    width: 61.09px;
+    height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 
 .section-title {
     margin: 0;
