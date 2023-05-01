@@ -136,8 +136,6 @@ ul{
     height: 18px;
     left: 18px;
     top: 15px;
-
-    background: #000000;
 }
 .search-bar{
     display: flex;
@@ -342,7 +340,25 @@ border-radius: 20px 20px 0px 0px;
     margin-bottom: 5px;
 }
 
+.Footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 
+    width: 1340px;
+    height: 163px;
+}
+.colonne-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    width: 446.67px;
+    height: 163px; 
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
