@@ -131,7 +131,7 @@ ul{
     height: 281px;  
 }
  #vector{
-    position: absolute;
+    position: relative;
     width: 14px;
     height: 18px;
     left: 18px;
@@ -149,7 +149,6 @@ ul{
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     flex: none;
-    order: 1;
     flex-grow: 0;
     z-index: 1;
 }
