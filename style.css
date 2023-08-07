@@ -409,9 +409,47 @@ border-radius: 20px 20px 0px 0px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-    #logoPng{
+   
+    #mainHeader{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        align-self: stretch; 
+    }
+    .button{
+        display:flex;
+        justify-content:flex-start;
+        align-self: stretch;
+    }
+    .headline{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-bar{
+        height: 49px;
+        align-self: stretch;
+        border-radius: 15px;
+border: 1px solid var(--grey, #F2F2F2);
+background: var(--white, #FFF);
+    }
+    .infobar{
+        display: flex;
+        padding: 0px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        align-self: stretch; 
+    }
+    .hebergements{
+        width:100%;
+    }
+    .hebergements-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 50px;
+        align-items: center;
+        align-self: stretch; 
     }
     .populaires-cards {
         display: flex;
@@ -420,6 +458,7 @@ border-radius: 20px 20px 0px 0px;
         align-items: center;
         align-self: stretch;  
     }
+  
     .populaires-cards:nth-child(1){
         order:1;
     }
@@ -434,10 +473,31 @@ border-radius: 20px 20px 0px 0px;
     .activités-cards{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        align-self: stretch; 
+        justify-content: flex-start;
+
     }
+   .Footer{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+   }
+  
+   .colonne-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+   }
+   .search-bar {
+    height: 49px;
+    align-self: stretch;
+    border-radius: 15px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: var(--white, #FFF); 
+   }
  
  
 }
