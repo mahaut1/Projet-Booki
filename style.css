@@ -380,6 +380,7 @@ border-radius: 20px 20px 0px 0px;
         width: 100%;
         gap: 30px;
         flex-direction: row;
+        align-items: flex-start;
     }
     .hebergements-cards{
         width: 30%;
@@ -414,6 +415,14 @@ border-radius: 20px 20px 0px 0px;
     .Activités{
         width: 100%;
     }
+    .activités-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 1280px;
+    }
 
 }
 
@@ -432,22 +441,11 @@ border-radius: 20px 20px 0px 0px;
         border: 1px solid var(--grey, #F2F2F2);
         background: var(--white, #FFF);
     }
-    .filterBar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
-        flex-wrap: wrap;
-    }
     .infobar{
         display: flex;
-        padding: 0px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 35px;
-        align-self: stretch; 
+        align-items: center;
+gap: 10px;
+align-self: stretch;
     }
    .hebergements-title{
     padding: 20px;
@@ -455,14 +453,19 @@ border-radius: 20px 20px 0px 0px;
     .hebergements-and-populaires{
         flex-direction: column-reverse;
     }
+    .hebergements{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        align-self: stretch;
+    }
     .hebergements-cards{
         display: flex;
-        padding-bottom: 0px;
+        padding: 30px 20px;
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        align-self: stretch;
-        background-color: #FFFFFF;
+        align-items: center; 
     }
     .section-title{
         width: 300.308px;
