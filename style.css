@@ -132,9 +132,7 @@ ul{
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    isolation: isolate;
-    
-    width: 1340px;
+
     height: 281px;  
 }
  #vector{
@@ -255,7 +253,6 @@ border-radius: 15px;
     padding: 3px;
     gap: 4px;
     width: 250.33px;
-    height: 207.25px;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -268,9 +265,9 @@ border-radius: 15px;
 }
  .hebergements-card-content {
     
-    padding: 0px 15px;
-    width: 250.33px;
-    height: 64.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /***** Activités ***********/
@@ -359,7 +356,6 @@ border-radius: 20px 20px 0px 0px;
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
-    
     width: 446.67px;
     height: 163px; 
 }
@@ -384,11 +380,21 @@ border-radius: 20px 20px 0px 0px;
         display: flex;
         padding-bottom: 0px;
         flex-direction: row;
+        gap: 30px;
+        justify-content:flex-start;
+    }
+    .hebergements-cards .card{
+        flex-direction: column;
         align-items: center;
-        gap: 5px;
-                justify-content: space-between;
-
-        flex: 1 0 0;
+        padding: 3px;
+        gap: 4px;
+        width: 210.33px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+    .hebergements-cards img{
+        width:210.33px;
     }
 
     .populaires {
@@ -476,8 +482,7 @@ gap: 20px;
         flex-direction: column-reverse;
     }
     .hebergements{
-        display: flex;
-        padding: 20px;
+        padding: 30px;
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
@@ -488,11 +493,11 @@ gap: 20px;
         display: flex;
         padding: 30px 20px;
         flex-direction: column;
-        align-items: center; 
+        gap:30px;
     }
     .section-title{
         width: 300.308px;
-        padding: 30px;
+        padding: 10px;
     }
     .populaires-cards {
         display: flex;
@@ -519,7 +524,6 @@ gap: 20px;
     }
    .Footer {
     display: flex;
-    padding: 30px;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
@@ -531,7 +535,6 @@ gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
    }
  
 }
