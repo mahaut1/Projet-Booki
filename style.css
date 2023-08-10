@@ -33,16 +33,28 @@ ul{
     font-size: 22px;
     line-height: 26px;  
 }
+
+#barreRecherche{
+    /* border: none; */
+    padding: 14px 16px 14px 14px;
+}
+
+.filterBar{
+    display: flex;
+    align-items: center;
+}
+
 .filterBar ul{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
     padding: 4px 19px;
     gap: 10px;
-
-    width: 173px;
+    /* width: 173px; */
     height: 50px;
+    width: 100%;  
 }
+
 #Eco, #rom{
     display: flex;
     flex-direction: row;
@@ -55,6 +67,7 @@ ul{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 }
+
 
 #Fam{
     display: flex;
@@ -84,18 +97,18 @@ ul{
 }
 
 
-.button{
+/* .button{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 68px; 
     background: var(--transparent, rgba(242, 242, 242, 0.00));
-}
-
+} */
+/* 
 #Hebergement-button {
     color: var(--blue, #0065FC);
     text-align: center; 
-}
+} */
 
 .main-container {
     width: 100%;
@@ -134,52 +147,65 @@ ul{
     align-items: flex-start;
     padding: 0px;
 }
- #vector{
-    position: sticky;
-    width: 14px;
-    height: 25px;
-    left: 18px;
-    top: 15px;
-    align-items: center;
-}
+
 .search-bar{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 24px;
-    width: 377px;
+    width: 353px;
     height: 49px;
     background: #FFFFFF;
-    border: 1px solid #F2F2F2;
+    border: 1.5px solid #F2F2F2;
     border-radius: 15px;
     flex: none;
     flex-grow: 0;
-    z-index: 1;
 }
 
-#recherche{
-    position: absolute;
-    width: 50px;
-    height: 49px;
-    left: 0px;
-    top: 0px;
-    background: #F2F2F2;
-    border: 1px solid #F2F2F2;
-border-radius: 15px 0px 0px 15px;
+#search{
+    display: flex;
 }
+
+.vector-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #D9D9D9;
+}
+
+#vector{
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    color: #000;
+}
+
+
+#barreRecherche{
+    border: none;
+    outline: none;
+}
+
 #submit{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 15px 16px;
     gap: 10px;
-
     width: 132px;
     height: 49px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 17px;
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+}
+
+.InfoBar{
+    margin: 30px 0;
 }
 
 .section-title {
@@ -243,8 +269,9 @@ border-radius: 15px 0px 0px 15px;
 .hebergements-title{
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px; 
+    padding: 10px 0 0 30px;
 }
 .hebergements-cards .card{  
     flex-direction: column;
@@ -306,6 +333,7 @@ border-radius: 20px 20px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 30px 0 30px;
 }
 
 .populaires-cards .card {
@@ -367,6 +395,16 @@ border-radius: 20px 20px 0px 0px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filterBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-heading{
+        align-self: flex-start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 4px;
@@ -466,7 +504,7 @@ border-radius: 20px 20px 0px 0px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
+        gap: 5px;
     }
     .hebergements-and-populaires{
         flex-direction: column-reverse;
@@ -522,12 +560,23 @@ border-radius: 20px 20px 0px 0px;
         width:315px;
     }
    .Footer {
-        flex-direction: column; 
-        position: absolute;  
+        display:block;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        
     }
   
    .colonne-footer {
     justify-content: flex-end;
    }
+
+   .maincontent{
+    margin-bottom: 650px;
+}
+
+.filterBar{
+    margin-bottom: 100PX;
+}
  
 }
