@@ -74,7 +74,7 @@ ul{
     padding: 4px 19px;
     gap: 10px;
     
-    width: 100px;
+    width: 120px;
     height: 50px; 
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -162,7 +162,7 @@ ul{
     font-size: 20px;
     position: absolute;
     top: 15px;
-    left: 14px;
+    left: 15px;
     color: #000;
 }
 
@@ -362,7 +362,7 @@ border-radius: 20px 20px 0px 0px;
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
-    width: 446.67px;
+    width: 430.67px;
     height: 163px; 
     background: #F2F2F2;
 }
@@ -373,10 +373,6 @@ border-radius: 20px 20px 0px 0px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .main-container{
-        max-width: 1024px;
-    }
-
     .filterBar{
         display: flex;
         flex-direction: column;
@@ -429,7 +425,6 @@ border-radius: 20px 20px 0px 0px;
         font-size: 13px;
     }
     .Activités{
-      height:390px;
       width: 750px;
       margin:0px;
     
@@ -467,6 +462,11 @@ border-radius: 20px 20px 0px 0px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+   .main-container{
+    width: 100%;
+    max-width: 768px;
+   }
+
   
     #mainHeader{
         display: flex;
@@ -538,7 +538,7 @@ border-radius: 20px 20px 0px 0px;
         margin: 15px;
     }
    .Activités{
-    width: 100%;
+    width: 315px;
     padding:15px;
     background: var(--white, #FFF);
    }
@@ -556,7 +556,9 @@ border-radius: 20px 20px 0px 0px;
         width:315px;
     }
    .Footer {
+        display: flex;
         flex-direction: column;
+        align-content: flex-end;
     }
   
    .colonne-footer {
