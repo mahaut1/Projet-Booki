@@ -102,18 +102,12 @@ ul{
 #mainHeader{
     width: 100%;
     height: 50px; 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
- 
 }
 
 #mainNav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
 .button:hover{
     color: blue;
@@ -124,6 +118,7 @@ ul{
     flex: none;
     order: 0;
     flex-grow: 0;
+    padding-top: 30px;
 }
 .info-group{
     display: flex;
@@ -465,14 +460,19 @@ border-radius: 20px 20px 0px 0px;
    .main-container{
     width: 100%;
     max-width: 768px;
+    height: 4000px;
    }
 
-  
     #mainHeader{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+        height: 85px;
+        gap:15px;
+        }
+    #mainNav{
+        border-bottom: 1px solid var (-- blue);
+        }
     .search-bar{
         height: 49px;
         align-self: stretch;
@@ -500,7 +500,7 @@ border-radius: 20px 20px 0px 0px;
     .hebergements-and-populaires section{
         border-radius: 0;
     }
-    .hebergements{
+    section.hebergements{
         background-color:#FFFFFF;
         padding: 0;
     }
@@ -556,14 +556,15 @@ border-radius: 20px 20px 0px 0px;
         width:315px;
     }
    .Footer {
-        display: flex;
         flex-direction: column;
         align-content: flex-end;
+        padding-top: 650px;
     }
   
    .colonne-footer {
-    justify-content: flex-end;
-   
+    width:320px; 
+    align-items: flex-start;
+    gap: 15px; 
    }
 
 .filterBar{
@@ -572,10 +573,6 @@ border-radius: 20px 20px 0px 0px;
 
 .filter-heading{
     margin-bottom: 0px;
-}
-
-.maincontent{
-    margin-bottom: 750px;
 }
  
 }
