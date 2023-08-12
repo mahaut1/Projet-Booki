@@ -18,21 +18,26 @@ body {
 }
 nav ul{
     display:flex;
-    margin: 15px;
-    gap: 68px;
     padding-bottom: 15px ;
-    width: 375px;
-    height:45px;
 }
 ul{
     list-style-type: none;
     padding: 4px 19px;
    
 }
+.Bar{
+    display: flex;
+align-items: flex-start;
+align-self: stretch; 
+padding-top: 15px;
+}
 
 #Hebergement-button {
     color: var(--blue, #0065FC);
     text-align: center; 
+}
+#Activités-button{
+    text-align: center;
 }
 
 .headline h1{
