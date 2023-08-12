@@ -18,20 +18,28 @@ body {
 }
 nav ul{
     display:flex;
-    margin: 0px 25px;
+    margin: 15px;
     gap: 68px;
-    padding: 0px,25px, 0px, 25px ;
+    padding-bottom: 15px ;
 }
 ul{
     list-style-type: none;
     padding: 4px 19px;
+   
+}
+
+#Hebergement-button {
+    color: var(--blue, #0065FC);
+    text-align: center; 
+    text-decoration: underline var(--blue, #0065FC);
 }
 
 .headline h1{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;  
+    line-height: 26px;
+    padding-top: 30px;  
 }
 
 #barreRecherche{
@@ -157,7 +165,7 @@ ul{
     font-size: 20px;
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 17px;
     color: #000;
 }
 
@@ -422,11 +430,12 @@ border-radius: 20px 20px 0px 0px;
     .Activités{
       width: 750px;
       margin:0px;
+      height: 400px;
+      padding: 0px;
     
     }
     .activités-cards {
         padding: 0px;
-        gap: 20px;
         width: 750px;
     }
     .activités-cards .card{
@@ -479,6 +488,18 @@ border-radius: 20px 20px 0px 0px;
         border-radius: 15px;
         border: 1px solid var(--grey, #F2F2F2);
         background: var(--white, #FFF);
+        width: 335px;;
+    }
+    #submit{
+        width: 49px;
+        height:49px;
+    }
+    #barreRecherche{
+        width: 235px;
+    }
+    .vector-wrapper{
+        width:50px;
+        height:49px;
     }
     .infobar{
         display: flex;
@@ -558,7 +579,7 @@ border-radius: 20px 20px 0px 0px;
    .Footer {
         flex-direction: column;
         align-content: flex-end;
-        padding-top: 650px;
+        padding-top: 800px;
     }
   
    .colonne-footer {
