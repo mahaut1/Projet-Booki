@@ -20,6 +20,7 @@ nav ul{
     display:flex;
     padding-bottom: 15px ;
     gap: 68px;
+    
 }
 ul{
     list-style-type: none;
@@ -34,6 +35,8 @@ ul{
     height: 2px; 
     padding-top: 15px; 
     align-items: end;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
 }
 .ActivitésBar{
     display: flex;
@@ -486,14 +489,15 @@ border-radius: 20px 20px 0px 0px;
         }
     #mainNav{
         border-bottom: 1px solid var (-- blue);
+        align-items: flex-start;
         }
     nav ul{
         gap:0px;
-        width: 335px;
+        width: 100%;
         align-self: stretch;
     }
     ul{
-        width: 335px;
+        width: 100%;
         padding: 0px;
     }
     .HebergementBar, .ActivitésBar{
@@ -501,7 +505,7 @@ border-radius: 20px 20px 0px 0px;
         align-items: flex-start;
         align-self: stretch; 
         padding-top: 15px;
-        width: 185px; 
+        width: 165px; 
     } 
     .ActivitésBar{
         height: 2px;
@@ -519,6 +523,9 @@ border-radius: 20px 20px 0px 0px;
         width:50px;
         height:49px;
     }
+    .search-bar{
+        width: 100%;
+    }
     .infobar{
         display: flex;
         align-items: center;
@@ -533,12 +540,7 @@ border-radius: 20px 20px 0px 0px;
         gap: 5px;
     }
     
-    .headline h1, .headline p, section.populaires, ul, nav ul {
-        width:335px;
-    }
-    ul {
-        max-width: 335px;
-    }
+
     .info-group{
         width: 335px;
     }
@@ -552,7 +554,7 @@ border-radius: 20px 20px 0px 0px;
     section.hebergements{
         background-color:#FFFFFF;
         padding: 0;
-        width: 350px;
+        width: 100%;
     }
     .hebergements-title{
         background-color:#FFFFFF;
@@ -581,6 +583,9 @@ border-radius: 20px 20px 0px 0px;
         width: 300.308px;
         padding: 10px;
     }
+    .populaires{
+        width: 100%;
+    }
     .populaires-cards {
         flex-direction: column;
         align-items: center; 
@@ -589,7 +594,7 @@ border-radius: 20px 20px 0px 0px;
         margin: 15px;
     }
    .Activités{
-    width: 315px;
+    width: 300px;
     padding:8px;
    }
     .activités-cards{
@@ -616,7 +621,7 @@ border-radius: 20px 20px 0px 0px;
     }
   
    div.colonne-footer {
-    width:320px; 
+    width:100%; 
     padding: 0px;
     align-items: flex-start;
     justify-content: flex-end;
