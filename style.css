@@ -36,9 +36,7 @@ ul{
     width: 113px;
     height: 2px; 
     padding-top: 15px; 
-    align-items: end;
-    flex-direction: column-reverse;
-    margin-bottom: 30px;
+    margin-top: -50px;
 }
 .ActivitésBar{
     display: flex;
@@ -51,6 +49,7 @@ height: 35px;
 #Hebergement-button {
     color: var(--blue, #0065FC);
     text-align: center; 
+    margin-top: 0px;
 }
 #Activités-button{
     text-align: center;
@@ -509,6 +508,9 @@ border-radius: 20px 20px 0px 0px;
         padding-top: 15px;
         width: 165px; 
     } 
+    .HebergementBar{
+        margin-top: 0px;
+    }
     .ActivitésBar{
         height: 2px;
     }
