@@ -20,6 +20,7 @@ nav ul{
     display:flex;
     padding-bottom: 15px ;
     gap: 68px;
+    padding-top: 0px;
     
 }
 ul{
@@ -36,7 +37,7 @@ ul{
     width: 113px;
     height: 2px; 
     padding-top: 15px; 
-    margin-top: -50px;
+    margin-top: -58px;
     color: var(--blue, #0065FC);
 }
 .ActivitésBar{
@@ -146,7 +147,7 @@ height: 35px;
 #logoPng{
     width: 61.09px;
     height: 19px;
-    padding: 30px 50px; 
+    padding-top:15px; 
 }
 .info-group{
     display: flex;
@@ -167,7 +168,7 @@ height: 35px;
     color: var(--black, #000);
 text-align: center;
 font-family: Raleway;
-font-size: 18px;
+font-size: 17px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -176,17 +177,17 @@ line-height: normal;
     display: flex;
 }
 
+
 .vector-wrapper{
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 49px;
     position: relative;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     background-color: #D9D9D9;
 }
 
 #vector{
-    font-size: 20px;
     position: absolute;
     top: 15px;
     left: 17px;
@@ -212,7 +213,6 @@ line-height: normal;
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
 
@@ -231,16 +231,26 @@ line-height: normal;
 
 }
 
-.card-title {
-    font-size: 16px;
+.card-rating{
+    margin-bottom: 5px;
 }
 
+.card-title {
+    font-size: 16px;
+    margin:2px;
+}
+.card-subtitle{
+    margin: 2px;
+}
 .euro {
     font-weight: 700;
 }
 
 .neutralStar {
     color: var(--main-bg-color)
+}
+#greyStar{
+    font-size: .75em;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -272,7 +282,7 @@ line-height: normal;
 .hebergements-title{
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 19px; 
     padding: 10px 0 0 30px;
 }
@@ -324,7 +334,9 @@ line-height: normal;
 height: 380px;
 border-radius: 20px 20px 0px 0px;
 }
-
+.Activités-title{
+    padding-top: 30px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -375,7 +387,6 @@ border-radius: 20px 20px 0px 0px;
 .Footer{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     justify-content: space-around;
     height: 163px;
@@ -384,12 +395,14 @@ border-radius: 20px 20px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 30px;
     width: 430.67px;
-    height: 163px; 
     background: #F2F2F2;
 }
-
+.colonneFooterTitel{
+    margin-left: 17px;
+    margin-bottom: 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -455,15 +468,21 @@ border-radius: 20px 20px 0px 0px;
       margin:0px;
       height: 400px;
       padding: 0px;
+      justify-content: center;
+      display: flex;
     
     }
     .activités-cards {
         padding: 0px;
         width: 100%;
+
     }
     .activités-cards .card{
-        width: 160px;
-        height: 270px;
+        width: 315px;
+        height: 210px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .activités-cards img{
         width:160px;
@@ -524,6 +543,9 @@ border-radius: 20px 20px 0px 0px;
     .ActivitésBar{
         height: 2px;
     }
+    .Activités-title{
+        padding-top: 75px;
+    }
     #submit{
         width: 49px;
         height:49px;
@@ -539,6 +561,7 @@ border-radius: 20px 20px 0px 0px;
     }
     .search-bar{
         width: 100%;
+        margin-left: 25px;
     }
     #loupe{
         display: flex;
@@ -569,6 +592,7 @@ border-radius: 20px 20px 0px 0px;
     .hebergements-and-populaires{
         flex-direction: column-reverse;
         gap:15px;
+        width: 100%;
     }
     .hebergements-and-populaires section{
         border-radius: 0;
@@ -617,7 +641,7 @@ border-radius: 20px 20px 0px 0px;
     }
    .Activités{
     width: 300px;
-    padding:8px;
+    padding:16px;
    }
     .activités-cards{
         display: flex;
@@ -634,7 +658,7 @@ border-radius: 20px 20px 0px 0px;
     }
    .Footer {
         flex-direction: column;
-        padding-top: 800px;
+        padding-top: 650px;
         width: 335px;
          justify-content: center;
     }
@@ -644,7 +668,6 @@ border-radius: 20px 20px 0px 0px;
   
    div.colonne-footer {
     width:100%; 
-    padding: 0px;
     align-items: flex-start;
     justify-content: flex-end;
    
