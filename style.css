@@ -25,8 +25,7 @@ nav ul{
 }
 ul{
     list-style-type: none;
-    padding: 4px 19px;
-   
+    padding: 4px 19px; 
 }
 #loupe{
     display: none;
@@ -47,7 +46,6 @@ padding-top: 15px;
 width: 63px;
 height: 35px; 
 }
-
 #Hebergement-button {
     color: var(--blue, #0065FC);
     text-align: center; 
@@ -56,7 +54,6 @@ height: 35px;
 #Activités-button{
     text-align: center;
 }
-
 .headline h1{
     font-style: normal;
     font-weight: 700;
@@ -64,17 +61,14 @@ height: 35px;
     line-height: 26px;
     padding-top: 30px;  
 }
-
 #barreRecherche{
     border: none;
     outline: none;
 }
-
 .filterBar{
     display: flex;
     align-items: center;
 }
-
 .filterBar ul{
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +76,6 @@ height: 35px;
     height: 50px;
     gap:10px;
 }
-
 #Eco, #rom, #Fam, #pep{
     display: flex;
     align-items: center;
@@ -92,7 +85,6 @@ height: 35px;
     border-radius: 25px;
     font-weight: bolder;
 }
-
 #pep{
     background: #DEEBFF;
 }
@@ -106,7 +98,6 @@ height: 35px;
     display: flex;
     justify-content: space-between;
 }
-
 #mainNav{
     display: flex;
     flex-direction: column;
@@ -123,7 +114,6 @@ height: 35px;
     display: flex;
     flex-direction: column;
 }
-
 .search-bar{
     display: flex;
     width: 353px;
@@ -134,15 +124,12 @@ height: 35px;
 }
 ::placeholder{
 text-align: center;
-font-family: Raleway;
 font-size: 17px;
 font-weight: 700;
 }
 #search{
     display: flex;
 }
-
-
 .vector-wrapper{
     width: 50px;
     height: 49px;
@@ -151,14 +138,12 @@ font-weight: 700;
     border-bottom-left-radius: 15px;
     background-color: #D9D9D9;
 }
-
 #vector{
     position: absolute;
     top: 15px;
     left: 17px;
     color: #000;
 }
-
 #submit{
     width: 132px;
     color: #fff;
@@ -168,21 +153,17 @@ font-weight: 700;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
-
 .InfoBar{
     margin: 30px 0;
 }
-
 .section-title {
     font-size: 22px;
 }
-
 .card {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
 .card img {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -190,13 +171,10 @@ font-weight: 700;
     width: 250.33px;
     height: 124px;
     box-sizing: border-box;
-
 }
-
 .card-rating{
     margin-bottom: 5px;
 }
-
 .card-title {
     font-size: 16px;
     margin:10px;
@@ -207,7 +185,6 @@ font-weight: 700;
 .euro {
     font-weight: 700;
 }
-
 .neutralStar {
     color: var(--main-bg-color)
 }
@@ -220,7 +197,6 @@ font-weight: 700;
     display: flex;
     justify-content: space-between;
 }
-
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -248,7 +224,6 @@ font-weight: 700;
     gap: 4px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
-
  .hebergements-card-content {
     flex-direction: column;
     padding-left: 5px;
@@ -285,26 +260,22 @@ border-radius: 20px 20px 0px 0px;
 .populaires {
     width: 32%;
 }
-
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px 0 30px;
 }
-
 .populaires-cards .card {
     display: flex;
     margin: 33px;
     padding: 3px;
 }
-
 .populaires-cards img {
     width: 33%;
     height: 136px;
     border-radius: 20px 0px 0px 20px;
 }
-
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -313,20 +284,16 @@ border-radius: 20px 20px 0px 0px;
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
 .populaires-cards .card-subtitle {
     margin: 0;
 }
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
 .Footer{
     display: flex;
     flex-direction: row;
@@ -365,12 +332,10 @@ border-radius: 20px 20px 0px 0px;
     #barreRecherche{
         padding: 0;
     }
-
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
     }
-
     .hebergements {
         width: 100%;
         align-items: flex-start;
@@ -384,24 +349,18 @@ border-radius: 20px 20px 0px 0px;
     .hebergements-cards img{
         width:210.33px;
     }
-
     .populaires {
         width: 100%;
     }
-
     .populaires-cards {
         display: flex;
     }
-   
-
     .populaires-cards .card {
         width: 335px;
     }
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
-
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
@@ -413,7 +372,6 @@ border-radius: 20px 20px 0px 0px;
     .activités-cards {
         padding: 0px;
         width: 100%;
-
     }
     .activités-cards .card{
         width: 315px;
@@ -450,6 +408,7 @@ border-radius: 20px 20px 0px 0px;
         gap:0px;
         width: 100%;
         align-self: stretch;
+       
     }
     ul{
         width: 100%;
@@ -463,6 +422,7 @@ border-radius: 20px 20px 0px 0px;
         width: 165px; 
     } 
     .HebergementBar{
+        width:100%;
         margin-top: 0px;
     }
     .ActivitésBar{
@@ -475,7 +435,11 @@ border-radius: 20px 20px 0px 0px;
         width: 49px;
         height:49px;
         font-size:0px ;
-        
+         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    }
+    #Eco, #rom, #Fam, #pep{
+        width: 120px;
+        height: 50px; 
     }
     #barreRecherche{
         width: 235px;
@@ -495,8 +459,8 @@ border-radius: 20px 20px 0px 0px;
         padding-top: 18px;
         color:#FFFFFF;
     }
-    #submit{
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    .svg-container{
+        width:100%;
     }
     .infobar{
         display: flex;
@@ -511,8 +475,6 @@ border-radius: 20px 20px 0px 0px;
         align-items: flex-start;
         gap: 5px;
     }
-    
-
     .info-group{
         width: 335px;
     }
@@ -589,29 +551,26 @@ border-radius: 20px 20px 0px 0px;
     }
    .Footer {
         flex-direction: column;
-        padding-top: 800px;
+        padding-top: 916px;
         width: 335px;
          justify-content: center;
     }
     ul.colonne-footer{
         align-items: center; 
     }
-  
    div.colonne-footer {
     width:100%; 
     align-items: flex-start;
     justify-content: flex-end;
    
    }
-.colonneFooterTitel{
+   .colonneFooterTitel{
     margin-left: 0px;
-}
-.filterBar{
-    margin-bottom: 50px;
-}
-
+    }
+   .filterBar{
+        margin-bottom: 50px;
+    }
 .filter-heading{
-    margin-bottom: 0px;
-}
- 
+        margin-bottom: 0px;
+    }
 }
