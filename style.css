@@ -248,7 +248,6 @@
   .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 0 20px;
   }
   
   /****** Hebergements ***********/
@@ -285,8 +284,8 @@
   .hebergements-card-content {
     flex-direction: column;
     padding-left: 5px;
-    margin: 7px 15px 30px 15px;
     font-size: 14px;
+    margin:5px;
   }
   
   /***** Activités ***********/
@@ -312,8 +311,9 @@
     height: 380px;
     border-radius: 20px 20px 0px 0px;
   }
-  .Activités-title {
-    padding-top: 30px;
+  
+  .activités-cards-content{
+    padding:5px;
   }
   .activités-cards .card {
     display: flex;
@@ -413,7 +413,7 @@
       align-items: center;
     }
     .hebergements-title{
-        padding-left:15px;
+        padding-bottom: 15px;
     }
     .hebergements-cards {
       width: 100%;
@@ -421,6 +421,7 @@
     .hebergements-card-content{
         padding:0px;
         margin-left:10px;
+        margin-bottom: 2px;
     }
     .hebergements-cards img {
       width: 100%;
@@ -456,10 +457,7 @@
       padding: 0px;
       width: 100%;
     }
-    .Activités-title{
-        padding-left: 7px;
-        padding-top: 0px;
-    }
+   
     .activités-cards .card {
       width: 100%;
       height:240px;
@@ -470,6 +468,7 @@
     }
     .Footer {
       height: 163px;
+    
     }
     .colonne-footer {
       height: 163px;
@@ -529,6 +528,7 @@
       position: relative;
       min-height: 50px;
       cursor: pointer;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     }
     #submit {
       width: 50px;
@@ -630,6 +630,9 @@ padding: 10px;
       flex-direction: column;
       align-items: center;
     }
+    .populaires-title{
+        padding: 0px;
+    }
     .populaires-cards .card {
       margin: 15px;
       width: 90%;
@@ -643,6 +646,9 @@ padding: 10px;
       flex-direction: column;
       justify-content: flex-start;
     }
+    .activités-title{
+        padding-left:5px;
+    }
     .activités-cards .card {
       width: 100%;
       height: 200px;
@@ -652,13 +658,14 @@ padding: 10px;
       height: 141px;
       width: 100%;
     }
-    .card-title {
+   .card-title {
       padding: 0px;
     }
     .Footer {
       flex-direction: column;
       justify-content: center;
       width: 100%;
+      padding-top: 780px;
     }
     ul.colonne-footer {
       align-items: center;
