@@ -36,41 +36,35 @@
     margin: 0;
   }
   
-  /* Nav */
-  
-  #mainNav ul {
+    
+  #logoPng {
+    width: 60px;
+    height: 19px;
+    margin-top: 20px;
+  }
+ #mainHeader {
+    height: 50px;
     display: flex;
-    gap: 68px;
+    justify-content: space-between;
   }
+  /* Nav */
+ 
+  /*on cible la liste non ordonnée de la main nav on lui met un display flex et un écart de 68px*/
+  #mainNav ul { display: flex; gap: 68px; }
+  /*on met une bordure transparente au dessus de la barre de navigation au dessus de chaque lien de la liste*/
+  #mainNav li { border-top: 2px solid transparent;}
+  /*On transforme la couleur de la bordure au survol*/ 
+  #mainNav li:hover {border-top: 2px solid var(--main-color);}
+  /*On cible les liens de la liste et on les mets en blocs pour qu'ils utilisent toute la largeur disponible en ajoutant un espacement de 20 pixels en haut pour créer de l'espace entre le texte du lien et le bord supérieur de l'élément de liste*/
+  #mainNav ul li a {display: block; padding-top: 20px; width: 100%;}
+  /*On change la couleur du texte au survol*/
+  #mainNav li:hover a { color: var(--main-color); }
+  /*on fait en sorte que n'importe ou on survol dans le lien la barre au dessus et le texte deviennent bleu*/
+  #mainNav a:hover {color: var(--main-color); }
+  /*on enleve le soulignement par défault*/
+  #mainNav a {text-decoration: none; }
   
-  #mainNav li {
-    border-top: 2px solid transparent;
-  }
-  
-  #mainNav li:hover {
-    border-top: 2px solid var(--main-color);
-  }
-  
-  #mainNav ul li a {
-    display: block;
-    padding-top: 20px;
-    width: 100%;
-  }
-  
-  #mainNav li:hover a {
-    color: var(--main-color);
-  }
-  
-  .button:hover {
-    color: blue;
-  }
-  #mainNav a:hover {
-    color: var(--main-color);
-  }
-  #mainNav a {
-    text-decoration: none;
-  }
-  
+
   .loupe {
     display: none;
   }
@@ -78,10 +72,7 @@
     background: #deebff;
   }
   .headline h1 {
-    font-style: normal;
-    font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
     padding-top: 20px;
   }
   
@@ -91,13 +82,6 @@
     border-left: none;
     border-right: none;
     min-height: 51px;
-    outline: none;
-    padding: 0 20px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    font-weight: 700;
     width: 180px;
   }
   
@@ -138,22 +122,8 @@
     max-width: 1440px;
     /* overflow: hidden; */
   }
-  #mainHeader {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-  #mainNav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  #logoPng {
-    width: 60px;
-    height: 19px;
-    margin-top: 20px;
-  }
+
+
   
   .info-group {
     display: flex;
@@ -189,9 +159,6 @@
     color: #000;
   }
   #submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 132px;
     height: 50px;
     color: #fff;
@@ -200,7 +167,6 @@
     background: #0065fc;
     border: 1px solid #0065fc;
     border-radius: 0px 15px 15px 0px;
-    cursor: pointer;
   }
   .InfoBar {
     margin: 30px 0;
@@ -527,7 +493,6 @@
     .btn-mobile {
       position: relative;
       min-height: 50px;
-      cursor: pointer;
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     }
     #submit {
